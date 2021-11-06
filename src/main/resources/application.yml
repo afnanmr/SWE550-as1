@@ -1,0 +1,19 @@
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/afnandb?allowPublicKeyRetrieval=true&useSSL=false
+    username: sa
+    password: Afnan123$
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
